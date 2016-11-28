@@ -4,5 +4,5 @@ request({
 	url: 'http://maps.googleapis.com/maps/api/geocode/json?address=Champs-%C3%89lys%C3%A9es',
 	json: true
 }, (error, response, body) => {
-	console.log(body);
+	console.log(JSON.stringify(body, undefined, 2));
 });
