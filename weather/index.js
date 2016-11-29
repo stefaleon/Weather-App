@@ -8,7 +8,7 @@ var getWeather = (lat, lon) => {
 			json: true
 		}, (error, response, body) => {
 			if (!error && response.statusCode === 200) {
-				resolve(undefined, {
+				resolve({
 					temperature: body.currently.temperature,
 					apparentTemperature: body.currently.apparentTemperature,
 					});				
